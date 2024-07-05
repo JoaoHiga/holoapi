@@ -62,4 +62,20 @@ public class Vtuber {
     public Boolean getInactive() {
         return inactive;
     }
+
+    @Override
+    public String toString() {
+        return "\n***************************************************************\n" +
+                "Información de " + vtuberName + "\n" +
+                "***************************************************************\n" +
+                "\tchannelId = " + channelId + "\n" +
+                "\tchannelName = " + channelName + "\n" +
+                "\tgroup = " + group + "\n" +
+                "\tvideoCount = " + videoCount + "\n" +
+                "\tsubscriberCount = " + subscriberCount + "\n" +
+                "\tclipCount = " + clipCount + "\n" +
+                "\ttopTopics = " + topTopics + "\n" +
+                "\tinactive = " + inactive + "\n" +
+                "***************************************************************\n";
+    }
 }
